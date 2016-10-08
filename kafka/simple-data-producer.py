@@ -33,9 +33,10 @@ def fetch_price(producer, symbol):
     """
     logger.debug('Start to fetch stock price for %s', symbol)
     try:
-        # price = json.dumps(getQuotes(symbol))
+        # price = json.dumps(getQuotes(symbol)) #fetched data
 
-        price = random.randint(30, 120)
+        price = random.randint(30, 120) #random generated data
+        
         timestamp = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%dT%H:%MZ')
         payload = ('[{"StockSymbol":"AAPL","LastTradePrice":%d,"LastTradeDateTime":"%s"}]' % (price, timestamp)).encode('utf-8')
 
