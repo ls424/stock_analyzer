@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 
 ### running
-assuming you are running Cassandra in a docker-machine called bigdata, the virtual ip is 192.168.99.100
+assuming you are running Cassandra in a docker-machine called bigdata and the virtual ip is 192.168.99.100
 
 use cqlsh client to create a keyspace and table
 ```sh
